@@ -1,11 +1,18 @@
 import Book from '../../components/books/book.component';
 import { books } from '../../components/books/books.component';
 
-const ShowAllBooks = () => {
+const ShowAllBooks = ({ findTheBook }) => {
   return (
     <div>
-      {books.map((book) => {
-        return <Book {...book} />;
+      {books.map((book, index) => {
+        return (
+          <Book
+            {...book}
+            key={book.id}
+            findTheBook={findTheBook}
+            number={index + 1}
+          />
+        );
       })}
     </div>
   );
