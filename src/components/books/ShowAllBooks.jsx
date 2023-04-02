@@ -3,7 +3,8 @@ import { books } from '../../components/books/books.component';
 
 const ShowAllBooks = ({ findTheBook }) => {
   return (
-    <div>
+    <>
+      <h1>Top Sellers</h1>
       {books.map((book, index) => {
         return (
           <Book
@@ -14,7 +15,7 @@ const ShowAllBooks = ({ findTheBook }) => {
           />
         );
       })}
-    </div>
+    </>
   );
 };
 export default ShowAllBooks;

@@ -9,8 +9,6 @@ const App = () => {
   };
   return (
     <div className='App'>
-      <h1>Top Sellers</h1>
-
       <ShowAllBooks findTheBook={findTheBook} />
     </div>
   );
