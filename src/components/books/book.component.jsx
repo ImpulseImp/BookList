@@ -6,6 +6,9 @@ const Book = (props) => {
       {children}
       <img src={img} alt={title} />
       <h2>{title}</h2>
+
+      <h4>{author} </h4>
+      <span className='number'>{`# ${number}`}</span>
       <div>
         <button
           type='button'
@@ -17,8 +20,6 @@ const Book = (props) => {
           info
         </button>
       </div>
-      <h4>{author} </h4>
-      <span className='number'>{`# ${number}`}</span>
     </article>
   );
 };
